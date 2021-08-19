@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'Idroid';
-    src: url(/d010/fontes/idroid.otf) format('opentype');
+    src: url(/fontes/idroid.otf) format('opentype');
     font-weight: normal;
 }
 
@@ -21,10 +21,16 @@
     --fonte-destaque: 'Bebas Neue', cursive;
     --fonte-android: 'Idroid', cursive;
 }
+.fas, .fa-external-link-alt{
+    text-indent: 3px;
+}
 *{
     margin: 0;
     padding: 0;
 }
+.fas {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900; }
 body{
     background-color: var(--cor0);
     font-family: var(--fonte-padrao);
@@ -38,6 +44,7 @@ header{
 header > h1{
     color: #fff;
     font-family: var(--fonte-destaque);
+    font-weight: normal;
     font-size: 3em;
     margin-bottom: 20px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
@@ -80,10 +87,12 @@ main{
 main h1{
     font-family: var(--fonte-android);
     color: var(--cor5);
+    font-weight: normal;
 }
 main h2{
     font-family: var(--fonte-android);
     color: var(--cor4);
+    font-weight: normal;
     font-size: 1.3em;
     background-image: linear-gradient(to right, var(--cor0), transparent);
     padding: 7px 0px 7px 10px;
@@ -118,13 +127,31 @@ main img.pequena{
     display: block;
     margin: auto;
 }
+div.video{
+    margin: 0 -20px 30px;
+    padding: 0 20px;
+    padding-bottom: 50%;
+    position: relative;
+}
+div.video > iframe{
+    border-radius: 50px;
+    box-shadow:  0 5px 5px #00000060;
+    position: absolute;
+    left: 3%;
+    width: 94%;
+    height: 100%;
+}
 aside{
     background-color: var(--cor0);
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 20px 20px 10px 10px;
 }
 aside > h3{
-    
+    background-color: var(--cor3);
+    color: var(--cor0);
+    margin: -10px -10px 0 -10px;
+    padding: 10px;
+    border-radius: 20px 20px 0 0;
 }
 aside > ul{
     list-style-type: '\2714\00a0';
